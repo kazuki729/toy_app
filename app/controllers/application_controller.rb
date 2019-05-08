@@ -5,4 +5,7 @@ class ApplicationController < ActionController::Base
     render html: "hello, world!"
   end
 
+  def index
+    @users = User.all
+  end
 end
